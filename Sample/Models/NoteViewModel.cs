@@ -11,8 +11,7 @@ namespace Sample.Models
         [Required(ErrorMessage = "Created date is required")]
         public DateTime? Created { get; set; }
 
-        [Required(ErrorMessage = "Age is required")]
         [Range(18, 50, ErrorMessage = "Age must be between 18 and 50")]
-        public int Age { get; set; }
+        public int? Age { get; set; }
     }
 }
